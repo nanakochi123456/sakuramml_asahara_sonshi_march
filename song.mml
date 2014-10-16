@@ -1,0 +1,607 @@
+
+Int MELODY=0
+Int BACK=1
+Tempo 70
+
+#PEDALON={Sub {r16y64,127}}
+#PEDALOFF={r-32 y64,0 r32}
+
+
+#intro1={
+	#PEDALON
+	g8.>c16
+	g2.^16 
+	#PEDALOFF
+	l32ab>cdef
+	g1^2.^16l32ab>cdef
+	g1
+	'c1e1'
+	Sub{f1^1}
+	d1c1
+	'<b1>g1'
+	Sub {
+		'c1^1^1^1e1^1^1^1'
+	}
+	r1r1r1
+	r1
+}	
+
+#intro2={
+	r1
+	r2l6ab-a
+	g4.c8g2&
+	g2 l6c<a>c
+	'c1e1'
+	Sub{<a1^1>}
+	d2f4.e16d16
+	c1
+	v-5
+	'<f1g1b1>'
+	v+5
+}
+
+
+#intro3={
+	r4
+	l2.
+	'cg>c<'
+	l1
+	'<b->f>cf<'
+	'cg>e<'
+	'<b->f>cf<'
+	'cg>e<'
+	'<a>f>d<'
+	'<f>ca'
+	v-5
+	'<g>fgb'
+	v+5
+	Sub {
+	'c1^1^1^1e1^1^1^1g1^1^1^1>c1^1^1^1<'	
+	}
+	r1r1r1
+	r1
+
+}
+
+#intro4={
+	r2
+	r8
+	r40
+	l40 gab>cdef 
+	l48  [12 ga ]
+	[24 ga ]
+	[24 ef ]
+	[24 ga ]
+	[24 cd ]
+	[24 ga ]
+	[24 ab ]
+	l48[8 gagfd<b ]			
+}
+
+#introbass={
+	r-4<g4>
+	l8
+	[4 
+		c4<g4>c<g>c<g>
+	]
+｝
+
+#melody1={
+	l8
+	e4c4e4c4
+	ecec e4c.r16
+	g4a4g4f4
+	e4d2r4
+	f4d4f4d4
+	fdfd f4d.r16
+	<g4a4g4>f4
+	e4c2r4
+	a.a16ag fff.r16
+	g.a16gf eee.r16
+	d4.e d4.<a
+	b4>cc d.r16 a4
+	g2.e4
+	c2.r4
+
+	<g>c4<b a.b16>cd<
+	g2.r4>
+	<g>c4<b a.b16>cd
+	e2.r4
+	<a>f4e d<a4b>
+	c2^8 r8 d.e16
+	d2^def
+	g2r4 g.a16
+
+	g2 ^ef16f16g
+	a2 ^r f.g16
+	f2 ^def
+	g2 ^r e.f16
+	e2 ^cde
+	f4.g ar b4
+	>c2<b4.b>
+	c2 r4<a4
+	g2 r4b4
+	a2 r4>c.c16
+	<b4b2 >e4
+	c2.r4<
+}
+
+#melody2={
+	l8
+	e4c4e4c4
+	ecec e4c.r16
+	g4a4g4f4
+	e4d2r4
+	f4d4f4d4
+	fdfd f4d.r16
+	<g4a4g4>f4
+	e4c2r4
+	a.a16ag fff.r16
+	g.a16gf eee.r16
+	d4.e d4.<a
+	b4>cc d.r16 a4
+	g2.e4
+	c2.r4
+
+	<g>c4<b a.b16>cd<
+	g2.r4>
+	<g>c4<b a.b16>cd
+	e2.r4
+	<a>f4e d<a4b>
+	c2^8 r8 d.e16
+	d2^def
+	g2r4 g.a16
+
+	g2 ^ef16f16g
+	a2 ^r f.g16
+	f2 ^def
+	g2 ^r e.f16
+	e2 ^c16c16de
+	f4.g ar b4
+	>c2<b4.b>
+	c2 r4<a4
+	g2 r4b4
+	a2 r4>c.c16
+	<b4b2 >e4
+	c2.r4<
+}
+
+#melody3={
+	l8
+	e4c4e4c4
+	ecec e4c.r16
+	g4a4g4f4
+	e4d2r4
+	f4d4f4d4
+	fdfd f4d.r16
+	<g4a4g4>f4
+	e4c2r4
+	a.a16ag fff.r16
+	g.a16gf eee.r16
+	d4.e d4.<a
+	b4>cc d.r16 a4
+	g2.g4>
+	c1
+}
+
+#chord={
+	l1
+	'g>ce<'
+	'a>ce<'
+	'gb>e<'
+	'a>df<'
+	'a>df<'
+	'a>df<'
+	'g>df<'
+	'g>ce<'
+
+	'a>cf<'
+	'gb>e<'
+	'fa>d<'
+	'fgb>d<'
+
+	'fgb>d<'
+	'g>ce<'
+
+	'g2>c2e2<' 'a2>c2f2<'
+	'g>ce<'
+	'g2>c2e2<' 'a2>c2f2<'
+	'g>ce<'
+	'a>df<'
+	'a>ce<'
+	'a>df<'
+	'g>df<'
+
+	'g>ce<'
+	'a>df<'
+	'g>df<'
+	'g>ce<'
+	'a>ce<'
+	'a>df<'
+	'g>df<'
+	'g>ce<'
+
+	'g>ce<'
+	'a>df<'
+	'g>df<'
+	'g>ce<'
+}
+
+#chord2={
+	l1
+	'g>ce<'
+	'a>ce<'
+	'gb>e<'
+	'a>df<'
+	'a>df<'
+	'a>df<'
+	'g>df<'
+	'g>ce<'
+
+	'a>cf<'
+	'gb>e<'
+	'fa>d<'
+	'fgb>d<'
+
+	'fgb>d<'
+	'g>ce<'
+
+	v+20
+
+	'g>ce<'
+	'fb->df<'
+	'g>ce<'
+	'fb->df<'
+	l4'cg>c<'
+	[3 l12'cg>c<' ]
+	l1'cg>c<'
+
+}
+
+#bass={
+	l4
+	c<g>c<g
+	aeae
+	bebe
+	>d<a>d<a
+	>d<a>d<a
+	>d<a>d<a
+	>d<g>d<g
+	>c<g>c<g
+
+	>fcfc
+	e<b>e<b>
+	d<a>d<a>
+	d<g>d<g>
+	d<g>d<g>
+	c<g>c8<g8>c8<g8>
+
+	[4 c<g>c<g> ]
+	d<a>d<a
+	aeae>
+	d<a>d<a>
+	d<g>d<g>
+
+	c<g>c<g>
+	d<a>d<a>
+	d<g>d<g>
+	c<g>c<g
+	aeae>
+	d<a>d<a>
+	d<g>d<g>
+	c<g>c8<g8>c8<g8>
+	
+
+	c<g>c<g>
+	d<a>d<a>
+	d<g>d<g>
+	c<g>c2
+}
+
+#bass2={
+	l4
+	c<g>c<g
+	aeae
+	bebe
+	>d<a>d<a
+	>d<a>d<a
+	>d<a>d<a
+	>d<g>d<g
+	>c<g>c<g
+
+	>fcfc
+	e<b>e<b>
+	d<a>d<a>
+	d<g>d<g>
+	d<g>d<g>
+	c<g>c8<g8>c8<g8>
+
+	c1
+	<b-1>
+	c1
+	<b-1
+	c4 c12c12c12 c1
+}
+
+#melodylast={
+	r4.
+	l22q100
+	dd#ef f#gg#&g#&g#
+	l22q100
+	g#g#aa aaa#&a#&a#
+	l23q100
+	g#g#aa aaa#&a#&a#
+	l23q100
+	aaaa aaa#&a#&a#
+
+	l24q100
+	a#a#a#a# a#a#b&b&b
+	l24q100
+	a#a#a#a# a#a#brr
+	l24q100
+	bbbb >ccc#&c#&c#<
+	l25q100
+	bbbb >ccc#&c#&c#<
+	l26q100
+	bbbb >ccc#&c#&c#<
+	l26q100
+	bbbb >ccc#&c#&c#<
+
+	l22q100
+	>cc#dd d#d#d#d# ee
+}
+
+IF(MELODY==1) {
+TR(1)
+	o5q95
+
+	r4
+	Tempo 70
+	[3 r1]
+	Tempo 60
+	[1 r1]
+	Tempo 70
+	[3 r1]
+	Tempo 60
+	r2
+	Tempo 50
+	r4
+	Tempo 120
+	r4
+	[4 r1 ]
+
+	音色(AltoSax)
+	#melody1
+	#melody2
+	#melody2
+	#melody3
+
+	Sub {
+		o5
+		#melodylast
+	}
+}
+
+IF(BACK==1) {
+TR(2)
+	o6q100
+	r4
+	[12 r1]
+	音色(PolySynthPad)
+	#melody1
+	#melody2
+	#melody2
+	#melody3
+
+TR(3)
+	o4q100
+	v110
+	Voice(Strings2)
+//	音色(WarmPad)
+	#intro1
+
+TR(4)
+	r4
+	o5q100
+	Voice(Strings1)
+	音色(WarmPad)
+	#intro2
+
+TR(5)
+	o4q100
+	r4
+	v90
+	Voice(Strings1)
+	音色(WarmPad)
+	#intro3
+
+	v80
+	[3 #chord ]
+	#chord2
+
+TR(6)
+#flute={
+	l2
+	r1
+	r2d4.c8<
+	bg
+	>c<b
+	a2.^8g8
+	f>d<
+	gf
+	e2.r8a8
+	g2.b4
+	a2.>c8.c16<
+	b4b2>e4
+	c2.r4
+}
+
+	o6q100
+	音色(Flute)
+	v60
+	Sub {#intro4 }
+	r4
+	[12 r1]
+	o7v70
+	[3
+		[22 r1]
+		#flute
+	]
+TR(7)
+#horn={
+	l2
+	r4g4>c4.<b8
+	a1
+	r4f4b4.a8
+	g1
+	r4e4a4.g8
+	f2>d2
+	c2<b2>
+	c2.r4
+	<
+	r4<g4&>g2
+	r4<a4&>a2
+	r4<b4&>b2
+	e2.r4
+}
+
+#horn2={
+	l12
+	o4
+	r4 g>cd g2<
+	fb->c f2.<
+	r4 g>cd g2<
+	fb->c f2.
+	g8
+}
+
+#horn3={
+	l12
+	o5
+	r2 g>cd g4&
+	g4f2.<
+	r2 g>cd g4&
+	g4f2.<
+	g8
+}
+
+#horn4={
+	o5
+	r1
+	r2l6ab-a
+	g8r8r2.
+	r2l6b-ab->
+	c8r8
+	o4
+	[3 l12'cg>c<' ]
+	l1 'cg>c<'
+}
+
+	o6q100
+	音色(FrenchHorn)
+	r4
+	[12 r1]
+	v115
+	o5
+	[3
+		[22 r1]
+		#horn
+	]
+	[14 r1]
+
+	Sub { #horn2 }
+	Sub { #horn3 }
+	Sub { #horn4 }
+	[6 r1]
+
+TR(9)
+	o4q95
+	v127
+	音色(AcousticBass)
+	r4
+	[8 r1]
+
+	#introbass
+	[3 #bass ]
+	#bass2
+
+#drum={
+	Rythm {
+		'b8s8's16s16 s16s16s16s16 s8s8s8s8
+	}
+}
+
+#drum1={
+	Rythm {
+		'b8s8's16s16 s16s16s16s16 s4c4
+	}
+}
+
+TR(10)
+	$b{n(Kick1),}
+//	$s{n(SideStick),}
+	$s{n(Sticks),}
+
+	$c{n(CrashCymbal1),}
+	r4
+	Tempo 70
+	[3 r1]
+	Tempo 60
+	[1 r1]
+	Tempo 70
+	[3 r1]
+	Tempo 60
+	r2
+	Tempo 50
+	r4
+	Tempo 120
+	Rythm {s4 }
+	[4 #drum ]
+
+	[3
+		[8 #drum ]
+		[8 #drum ]
+		[8 #drum ]
+		[8 #drum ]
+		[1 #drum ] #drum1
+	]
+
+	[1
+		[8 #drum ]
+		[6 #drum ]
+	]
+
+TR(11)
+	音色(Timpani)
+	o4
+	r4
+	v95
+	[94 r1]
+	[34 r1]
+	#PEDALON
+	r4[18 v+1 c24]<
+	  [18 v-1 b-24][6 b-24]>
+	r4[18 v+1 c24]<
+	  [18 v-1 b-24][6 b-24]>
+	v115
+	c4 c12c12c12
+	[32 v-2 c32]
+
+	#PEDALOFF
+}
+
+End
+
+[Effector]
+EffectorName=Reverb
+Parameter1=3.5992
+Parameter2=13000
+Parameter3=203.734
+Parameter4=78.5
+Parameter5=44
+Parameter6=-1.44
+Parameter7=31.6228
+Parameter8=58
+Parameter9=-12.48
+Parameter10=-1.72
+
